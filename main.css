@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteiner {
+    width: 70%;
+    max-width: 1024;
+    margin: 0 auto;
+}
+
+header .conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 10px 0px;
+    margin-bottom: 32px;
+    background-color:  rgb(20, 20, 224);
+}
+
+
+header h1 {
+    color: #fff;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+header li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+}
+.sobre-image img {
+    width: 100%;
+}
+
+.sobre {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+
+.subsobre h2 {
+    margin-left: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid  rgb(20, 20, 224);
+    color:  rgb(20, 20, 224);
+}
+
+.subsobre p {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.produtos h2 {
+    margin-top: 32px;
+    width: 100%;
+    padding: 10px 0px;
+    border-bottom: 2px solid  rgb(20, 20, 224);
+    color:  rgb(20, 20, 224);
+}
+
+.produtos ul {
+    display: grid;
+    column-gap: 1%;
+    grid-template-columns: repeat(4,24%);
+    margin-top: 32px;
+}
+
+.produtos li {
+    list-style: none;
+}
+
+.produtos li p {
+    padding: 10px 0px;
+}
+
+.produtos li button {
+    width: 100%;
+    padding: 5px 0px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(20, 20, 224);
+    color: #fff;
+    font-size: 1em;
+}
+
+
+.produtos li img {
+    width: 100%;
+}
+
+
+@media screen and (min-width:641px) and (max-width:1023px) {
+
+    .sobre {
+        display: block;
+    }
+
+    body {
+        display: flex;
+    }
+
+    .esquerda {
+        width: 50%;
+    }
+  
+    .direita {
+        width: 50%;
+    }
+
+
+    .produtos ul {
+        display: grid;
+        column-gap: 1%;
+        grid-template-columns: repeat(2,54%);
+        margin-top: 32px;
+    }
+
+    .produtos h2 {
+        margin-top: 10px;
+    }
+
+
+    header ul {
+        margin-left: 32px;
+    }
+
+}
+
+
+@media screen and (max-width:640px){
+    .sobre {
+        display: block;
+    }
+
+    body {
+        display: flex;
+    }
+
+    .esquerda {
+        width: 40%;
+    }
+  
+    .direita {
+        width: 60%;
+    }
+
+
+    .produtos ul {
+        display: grid;
+        column-gap: 1%;
+        grid-template-columns: repeat(2,54%);
+        margin-top: 32px;
+    }
+
+    .produtos h2 {
+        margin-top: 10px;
+    }
+
+
+    header ul {
+        margin-left: 32px;
+    }
+
+
+    header ul {
+        display: block;
+    }
+
+    header .conteiner {
+        width: 90%;
+    }
+}
